@@ -34,6 +34,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
 The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
 <br/>
 https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+</br>
+https://www.tutorialstonight.com/js/js-dom-introduction
 
 ## 7- What is hoisting in javascript?
 In JavaScript, hoisting allows you to use functions and variables before they're declared.
@@ -52,6 +54,26 @@ https://www.scaler.com/topics/callback-hell-in-javascript/
 
 ## 10- What is the promise and how many parameters do they have?
 A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+```js
+// a promise
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('promise resolved');
+  }, 4000);
+});
+// async function
+async function asyncFunc() {
+  try {
+    // wait util the promise resolved
+    let result = await promise();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+// calling the async function
+asyncFunc(); //promise resolved
+```
 <br/>
 https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/introduction-to-promises#:~:text=A%20promise%20generally%20takes%20a,async%20code%20goes%20here%20%7D)%3B
 
@@ -213,3 +235,78 @@ https://www.geeksforgeeks.org/what-is-prop-drilling-and-how-to-avoid-it/
 - [ ] It fires at the end of all DOM mutations. It's best to use useEffect as much as possible over this one as the useLayoutEffect fires synchronously.
 ## useDebugValue: 
 - [ ] Helps to display a label in React DevTools for custom hooks.
+
+## 38- What is the difference between useMemo and useCallback?
+  https://www.freecodecamp.org/news/better-react-performance-usecallback-vs-usememo/
+
+## 39- What is the pure component in react?
+  https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/
+
+## 40- What is a higher order function?
+   https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/
+     </br>
+   https://codepen.io/Mo-SlimedGhost/pen/abWeqXq
+   
+## 41- What is a prototype in javascript?
+   https://www.geeksforgeeks.org/prototype-in-javascript/
+  
+## 42- What is the difference between HTML and HTML5?
+   https://www.geeksforgeeks.org/difference-between-html-and-html5/
+   </br>
+   https://www.javatpoint.com/html-vs-html5
+
+## 43- What is the difference between id and class?
+   https://www.geeksforgeeks.org/difference-between-id-and-class-attributes-in-html/
+   </br>
+   https://www.javatpoint.com/css-class-vs-id
+   
+## 44- What is the difference between let, const and var?  
+   https://www.freecodecamp.org/news/differences-between-var-let-const-javascript/#:~:text=If%20you%20never%20want%20a,is%20the%20keyword%20for%20you
+   </br>
+   https://www.geeksforgeeks.org/difference-between-var-let-and-const-keywords-in-javascript/
+    </br>
+   https://blog.webdevsimplified.com/2020-01/var-vs-let-vs-const/
+   
+## 45- What is the media query in css?
+   https://www.w3schools.com/css/css3_mediaqueries.asp
+   </br>
+   https://www.geeksforgeeks.org/css-media-queries/
+   
+## 46- What is the difference between margin and padding?  
+   https://www.geeksforgeeks.org/css-padding-vs-margin/
+   </br>
+   https://hackr.io/blog/margin-vs-padding
+   </br>
+   https://byjus.com/gate/difference-between-margin-and-padding/
+   
+   
+## 47- What is a callback function in javascript?
+   https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
+   </br>
+   https://www.simplilearn.com/tutorials/javascript-tutorial/callback-function-in-javascript
+   </br>
+   https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/
+   
+## 48- What is ajax?
+   https://www.w3schools.com/whatis/whatis_ajax.asp
+   </br>
+   https://www.javatpoint.com/ajax-tutorial
+   
+## 49- What is the difference between null and undefined?
+   https://wesbos.com/javascript/01-the-basics/types-null-and-undefined
+   </br>
+   https://www.javatpoint.com/null-vs-undefined
+   
+## 50- What are the new features in ES6?
+   https://www.w3schools.com/js/js_es6.asp
+   </br>
+   https://www.boardinfinity.com/blog/top-10-features-of-es6/
+   </br>
+   https://www.freecodecamp.org/news/write-less-do-more-with-javascript-es6-5fd4a8e50ee2/
+
+## 51- For vs forEach() vs for/in vs for/of in JavaScript?
+  https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript.html
+
+   
+   
+   
